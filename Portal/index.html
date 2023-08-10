@@ -1854,7 +1854,19 @@
         <script src="./assets/js/app.js"></script>
         <script src="./assets/library/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
 
-
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "ee8784ca-2e4e-4fe1-8484-3c172dc5e151", // The ID of this integration.
+              region: "jp-tok", // The region your integration is hosted in.
+              serviceInstanceID: "c5330839-d098-4397-9f10-f7fd126b790b", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
     </body>
 
 </html>
