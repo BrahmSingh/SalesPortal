@@ -159,13 +159,13 @@ var minichart4Colors = getChartColorsArray("#mini-chart4")
 (chart = new ApexCharts(document.querySelector("#mini-chart4"),options)).render();
 var piechartColors = getChartColorsArray("#wallet-balance")
   , options = {
-    series: [35, 70, 15],
+    series: [25, 20, 15,10,8,6,4,2],
     chart: {
         width: 227,
         height: 227,
         type: "pie"
     },
-    labels: ["Ethereum", "Bitcoin", "Litecoin"],
+    labels: ["Healthcare", "Insurance", "Technology", "Retails", "Banking", "Services", "Telecom", "Others"],
     colors: piechartColors,
     stroke: {
         width: 0
